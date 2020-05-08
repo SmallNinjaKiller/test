@@ -1,4 +1,4 @@
-import { fightersDetails, fighters } from './mockData';
+import { fighters, fightersDetails } from './mockData';
 
 const API_URL = 'https://api.github.com/repos/binary-studio-academy/stage-2-es6-for-everyone/contents/resources/api/';
 const useMockAPI = true;
@@ -35,4 +35,4 @@ function getFighterById(endpoint) {
   return fightersDetails.find((it) => it._id === id);
 }
 
-export { callApi };
+export { callApi, getFighterById };
