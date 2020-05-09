@@ -57,7 +57,18 @@
 }
 
 .arena___health-bar {
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
   height: 100%;
   width: 100%;
   background-color: #ebd759;
+}
+
+.preview-arena___versus-img {
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
 }

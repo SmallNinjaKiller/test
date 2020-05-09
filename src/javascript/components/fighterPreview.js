@@ -9,14 +9,14 @@ export function createFighterPreview(fighter, position) {
   });
 
   if (fighter) {
-    const { name, health, attack } = getFighterInfo(fighter._id);
+    const { name, health, attack, defense }  = getFighterInfo(fighter._id);
     const infoElement = createElement({
       tagName: 'div',
       className: `fighter-preview___root___info`,
     });
 
     const imgElement = createFighterImage(fighter);
-    infoElement.innerText = `name: ${name}, health: ${health}, attack: ${attack}`
+    infoElement.innerHTML = `name: ${name} , health: ${health}, attack: ${attack} , deffence: ${defense}`
 
     fighterElement.append(infoElement)
     fighterElement.append(imgElement);

@@ -1,7 +1,7 @@
 .fighter-preview___root {
   display: flex;
   flex-direction: column;
-  flex-basis: 250px;
+  flex-basis: 400px;
 }
 
 .fighter-preview___right {
@@ -10,10 +10,15 @@
 
 .fighter-preview___right img {
   transform: scaleX(-1);
+  height: 430px;
 }
 
 .fighter-preview___left {
   align-items: center;
+}
+
+.fighter-preview___left img{
+  height: 430px;
 }
 
 .fighter-preview___root___info {
@@ -21,7 +26,7 @@
   display: flex;
   justify-content: center;
   width: 200px;
-  height: 50px;
+  height: 70px;
   padding: 8px 35px;
   text-align: center;
   background: #ba0303;
